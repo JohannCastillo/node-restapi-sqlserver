@@ -1,0 +1,37 @@
+@api = http://localhost:3000/
+
+GET {{api}}providers
+
+###
+
+POST {{api}}newprovider
+Content-Type: application/json
+
+{
+    "RUC": "10098110620",
+    "Proveedor": "Proveedor 2 Inc Group",
+    "Descripcion": "Aromatizantes 2",
+    "Direccion": "251 Ledner Ville",
+    "Telefono": "945645125",
+    "Correo": "proveedor2@yahoo.com"
+}
+
+###
+GET {{api}}findprovider/4
+
+###
+PUT {{api}}providers
+Content-Type: application/json
+
+{   
+    "idProveedor": 1,
+    "RUC": "94990879972",
+    "Proveedor": "Medhurst - Gleason SAA",
+    "Descripcion": "open-source embrace",
+    "Direccion": "216 Senger Shoal",
+    "Telefono": "680145801",
+    "Correo": "Marina_Bogisich10@yahoo.com"
+}
+
+###
+DELETE {{api}}providers/19

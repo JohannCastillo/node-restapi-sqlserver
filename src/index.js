@@ -2,4 +2,4 @@ import app from './app'
 
 app.listen(app.get('port'))
 
-console.log("hello world 2")
+console.log("Working on port "+ app.get('port')) 
